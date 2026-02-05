@@ -1,0 +1,132 @@
+/* Project 10: Text Manipulator */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.input-section {
+    margin-bottom: 30px;
+}
+
+#text-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+#text-input:focus {
+    outline: none;
+    border-color: #f5576c;
+}
+
+.text-display {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#display-text {
+    font-size: 24px;
+    color: #333;
+    transition: all 0.3s ease;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.button-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    background: #667eea;
+    color: white;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn.red {
+    background: #f44336;
+}
+
+.btn.red:hover {
+    box-shadow: 0 5px 15px rgba(244, 67, 54, 0.3);
+}
+
+.btn.blue {
+    background: #2196f3;
+}
+
+.btn.blue:hover {
+    box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+}
+
+.btn.green {
+    background: #4caf50;
+}
+
+.btn.green:hover {
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+.btn.reset {
+    background: #ff9800;
+    grid-column: 1 / -1;
+}
+
+.btn.reset:hover {
+    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+}
+
+
